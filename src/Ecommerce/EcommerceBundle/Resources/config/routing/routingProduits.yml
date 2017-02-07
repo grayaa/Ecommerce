@@ -1,0 +1,15 @@
+presentation:
+    path:     /
+    defaults: { _controller: EcommerceBundle:Produits:listeProduits }
+
+produit:
+    path:     /produit/{id}
+    defaults: { _controller: EcommerceBundle:Produits:produit }
+
+categorieProduit:
+    path:     /categorie/{id}
+    defaults: { _controller: EcommerceBundle:Produits:categorie }
+
+rechercheProduit:
+    path:     /recherche
+    defaults: { _controller: EcommerceBundle:Produits:rechercheTraitement }

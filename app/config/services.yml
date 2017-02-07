@@ -1,0 +1,15 @@
+# Learn more about services, parameters and containers at
+# http://symfony.com/doc/current/service_container.html
+parameters:
+#    parameter_name: value
+
+services:
+    tva_extension:
+            class: Ecommerce\EcommerceBundle\Twig\Extension\TvaExtension
+            tags:
+                - { name:  twig.extension }
+
+    montantTva_extension:
+                class: Ecommerce\EcommerceBundle\Twig\Extension\MontantTvaExtension
+                tags:
+                    - { name:  twig.extension }
